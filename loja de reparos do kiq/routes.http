@@ -1,0 +1,31 @@
+POST http://localhost:3333/reparo
+Content-Type: application/json
+
+{
+    "loja": "Loja do kiq",
+    "precoreparo": " 2000",
+    "nconcertos": "4"
+}
+
+###
+#lista
+GET http://localhost:3333/reparo
+
+###
+
+GET http://localhost:3333/reparo?search=IFMS
+
+###
+
+PUT http://localhost:3333/reparos/f84fa2f2-3c54-40c4-a4b0-3ed2c3579e63
+Content-Type: application/json
+
+{
+    "loja": "loja do kiq n2",
+    "precoreparo": "500",
+    "nconcertos": "10"
+}
+
+###
+
+DELETE http://localhost:3333/reparos/c946f34b-9a67-4bd6-b878-10bc25b5d49c
